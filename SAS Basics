@@ -8,3 +8,10 @@ PROC IMPORT OUT= WORK.RI
 RUN;
 
 
+### To get the Frequency and Descriptive mesaures of a scale variable by a Categorical Variable ####
+PROC UNIVARIATE DATA= Work.RI ;
+  CLASS RR_cat;
+  VAR ageofbuss;
+RUN;
+
+

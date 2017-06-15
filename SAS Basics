@@ -1,0 +1,8 @@
+### The code to Import data from CSV  file ###
+
+PROC IMPORT OUT= WORK.RI 
+            DATAFILE= "D:\Work\Reject Inference\attachments\MyData.csv" 
+            DBMS=CSV REPLACE;
+     GETNAMES=YES;
+     DATAROW=2; 
+RUN;

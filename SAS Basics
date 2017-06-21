@@ -14,4 +14,12 @@ PROC UNIVARIATE DATA= Work.RI ;
   VAR ageofbuss;
 RUN;
 
+### To get  colunm names form a DATASET 
 
+proc  contents data = RI.RI out = meta (keep = NAME) ;
+
+run;
+
+proc print data = meta ;
+
+run;
